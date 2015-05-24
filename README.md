@@ -76,6 +76,6 @@ The script run_analysis.R generates a tidy data text file that follows the follo
 The script writes the final analysis results to a file (**finalOutput.txt**) under the **output** directory.
 this file can read into R with 
 ```
-   read.table("filename or url", header=TRUE)
+   read.table("https://github.com/gonzra/getAndCleanDataProject/blob/master/output/finalOutput.txt", header=TRUE)
 ```
 In addition, the first tidy data set which was used to perform the analysis is also saved into a file for convenience. 
