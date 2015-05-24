@@ -1,0 +1,67 @@
+---
+title: "Code Book"
+author: "Rafael E. Gonzalez"
+date: "Sunday, May 24, 2015"
+output: html_document
+---
+
+This code book describes the variables used in the project. the original data was downloaded from:
+
+
+The file ./data/features_info.txt describes the orignal data. From the original data set, only the features representing measurements of mean and standard deviation were extracted to form the tidy data set, as requested in the project instructions. The mean and standard deviation column were determined by looking for variable name which contain "mean()" or "std()" (using regular expressions). The name of the variables were transformed to be more descriptive to the user.
+
+This is a description of the variable names:
+
+1) ActivityName - Name of the activity performed by the subject:
+
+1. WALKING
+2. WALKING_UPSTAIRS
+3. WALKING_DOWNSTAIRS
+4. SITTING
+5. STANDING
+6. LAYING
+
+2) Subject - Index indicating the person or subject used in the experiment (1 - 30)
+
+The following variables represent the average of the measurement grouped by the ActivityName and Subject (described above).
+
+* -XYZ is used to denote 3-axial signals in the X, Y and Z directions.
+* -mean() denotes that the original measurment was a mean value calculation result
+* -std() denotes that the original measurement was a Standard deviation calculation result
+
+
+* The features selected come from the mean and standard deviation calculation of the accelerometer and gyroscope 3-axial raw signals BodyAccelerationTime-XYZ and BodyAngularVelocityTime-XYZ. 
+
+
+* The Jerk signals are derivation of of the body linear acceleration and angular velocity in time : BodyJerkAccelerationTime-XYZ, BodyJerkAngularVelocityTime-XYZ
+
+* In the original data set BodyAccelerationTimeMagnitude, GravityAccelerationTimeMagnitude, BodyAccelerationJerkTimeMagnitude, BodyAngularVelocityTimeMagnitude, BodyJerkAngularVelocityTimeMagnitude, represent the magnitude of these three-dimensional signals which were calculated using the Euclidean norm  
+
+
+* The frequency signals, in the original datas et were obtained by applying a Fast Fourier transfomr to some of the signals :  BodyAccelerationFrequency-XYZ, BodyJerkAccelerationFrequency-XYZ, BodyAngularVelocityFrequency-XYZ, BodyJerkAccelerationFrequencyMagnitude, BodyAccelerationFrequencyMagnitude, BodyJerkAngularVelocityFrequency
+
+
+List of variable names: 
+
+* ActivityName
+* Subject
+* BodyAccelerationTime-mean()|std()-XYZ
+* GravityAccelerationTime-mean()|std()-XYZ
+* BodyJerkAccelerationTime-mean()|std()-XYZ
+* BodyAngularVelocityTime-mean()|std()-XYZ
+* BodyJerkAngularVelocityTime-mean()|std()-XYZ
+
+* BodyAccelerationTimeMagnitude
+* GravityAccelerationTimeMagnitude
+* BodyJerkAngularVelocityTimeMagnitude
+* BodyAngularVelocityTimeMagnitude
+* BodyJerkAngularVelocityTimeMagnitude
+
+* BodyAccelerationFrequency-mean()|std()-XYZ
+* BodyJerkAccelerationFrequency-mean()|std()-XYZ
+* BodyAngularVelocityFrequency-mean()|std()-XYZ
+
+* BodyAccelerationFrequencyMagnitude
+* BodyJerkAccelerationFrequencyMagnitude
+* BodyAngularVelocityFreqencyMagnitude
+* BodyJerkAngularVelocityFrequency
