@@ -33,7 +33,7 @@ This project required us to use existing raw data set (data collected from accel
 
 - **/doc** : The doc directory contains the code book and other documentation
 - **/data** : The data directory contains the original data sets downloaded from the source
-- **/output** : The output directory contains two data products: The first tidy data set and a second tidy data set
+- **/output** : The output directory contains two data products: tidyDataSet1.txt and finalOutput.txt
 - **run_analysis.R** : Main script which performs data loading, cleaning, formatting, data analysis and output
 - **Readme.Rmd** : this document
 
