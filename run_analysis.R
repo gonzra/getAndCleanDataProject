@@ -2,11 +2,6 @@
 library(dplyr)
 library(plyr)
 
-downloadData <- function()
-{
-  
-}
-
 
 combineTestAndTrainData <- function(baseDir, testDataFilename, trainDataFilename)
 {
@@ -61,7 +56,7 @@ transformVariableName <- function(rawVariableName)
   transformedVariable <- gsub("tBodyGyroJerk", "BodyJerkAngularVelocityTime",transformedVariable, fixed = TRUE)
   transformedVariable <- gsub("tBodyAccMag", "BodyAccelerationTimeMagnitude",transformedVariable, fixed = TRUE)
   
-  transformedVariable <- gsub("fBodyAcc", "BodyJerkAccelerationFrequency",transformedVariable, fixed = TRUE)
+  transformedVariable <- gsub("fBodyAcc", "BodyAccelerationFrequency",transformedVariable, fixed = TRUE)
   transformedVariable <- gsub("fBodyAccJerk", "BodyJerkAccelerationFrequency",transformedVariable, fixed = TRUE)
   transformedVariable <- gsub("fBodyGyro", "BodyAngularVelocityFrequency",transformedVariable, fixed = TRUE)
   return (transformedVariable)
