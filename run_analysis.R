@@ -45,7 +45,7 @@ transformVariableName <- function(rawVariableName)
   transformedVariable <- gsub("tBodyGyroMag", "BodyAngularVelocityTimeMagnitude",transformedVariable, fixed = TRUE)
   transformedVariable <- gsub("tBodyGyroJerkMag", "BodyJerkAngularVelocityTimeMagnitude",transformedVariable, fixed = TRUE)
   transformedVariable <- gsub("fBodyAccMag", "BodyAccelerationFrequencyMagnitude",transformedVariable, fixed = TRUE)
-  transformedVariable <- gsub("fBodyAccJerkMag", "BodyJerkAngularVelocityFrequencyMagnitude",transformedVariable, fixed = TRUE)
+  transformedVariable <- gsub("fBodyAccJerkMag", "BodyJerkAccelerationFrequencyMagnitude",transformedVariable, fixed = TRUE)
   transformedVariable <- gsub("fBodyGyroMag", "BodyAngularVelocityFreqencyMagnitude",transformedVariable, fixed = TRUE)
   transformedVariable <- gsub("fBodyGyroJerkMag", "BodyJerkAngularVelocityFrequency",transformedVariable, fixed = TRUE)
   
